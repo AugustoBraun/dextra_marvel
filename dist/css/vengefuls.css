@@ -1,0 +1,179 @@
+body{
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 30px;
+    background-image: url(/img/inf.jpg);
+    background-size: cover;
+}
+
+h1,h2,h3,h4,h5{
+    color: #fff;
+}
+
+.red{
+    color: #ff0000 !important;
+    text-shadow: 1px 1px 3px black;
+}
+.yellow{
+    color: #ffff00 !important;
+}
+.avengeance{
+    font-family: avengeance;
+}
+.badaboom{
+    font-family: badaboom;
+}
+.comic-book{
+    font-family: comic_book;
+}
+
+.title1,.title2{
+    color: #fff;
+}
+.title1{
+    font-size: 2.5rem;
+}
+.title2{
+    font-size: 4.5rem;
+}
+
+/*
+interface
+*/
+
+.close{
+    z-index: 999;
+    position: relative;
+}
+
+.selected-char{
+    position: fixed;
+    top: 20%;
+    bottom: 20%;
+    left: calc(50% - 450px);
+    padding: 2rem;
+    border-radius: 10px;
+    z-index: 10;
+    background-color: #fff;
+    display: none;
+    padding-top: 20px;
+    max-width: 900px;
+}
+
+.selected-char .character, .selected-char .comics,.selected-char .events, .selected-char .series, .selected-char .stories{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display:none;
+    z-index: 1;
+}
+
+
+/*
+card character
+*/
+.selected-char .character .image{
+    height: 100%;
+    max-width: 45%;
+    position: relative;
+    float: left;
+}
+
+.selected-char .character .display{
+    position: relative;
+    width: 50%;
+    float: right;
+    height: 100%;
+    /*text-align: left;*/
+}
+
+.selected-char .character .display .name{
+    font-size: 4rem;
+    text-shadow: -5px 5px 0px black;
+}
+
+.selected-char .character .display .description{
+    font-size: 1rem;
+    color: #666;
+}
+
+.selected-char .character .display .buttons{
+    /*border: 1px solid black;*/
+    margin: 20px 0;
+    text-align: center;
+}
+
+.selected-char .character .display .attribution{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    text-align: right;
+    color: #666;
+    font-size: 1rem;
+}
+
+/*
+card comics
+*/
+.selected-char .comics{
+
+}
+.selected-char .comics .comics-list{
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 100%;
+}
+.selected-char .comics .comics-list .number{
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    background-color: #999;
+    color: #fff;
+    font-size: 14px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 30px;
+}
+.selected-char .comics .comics-list .buy{
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+}
+
+
+.covers{
+    max-height: 200px;
+    margin: 20px;
+}
+
+
+
+
+.copyright{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    margin-left: -147px;
+    font-size: 40px;
+}
+
+/*
+fontfaces
+*/
+
+@font-face {
+    font-family: avengeance;
+    src: url(/dist/fonts/avengeance.otf);
+}
+@font-face {
+    font-family: badaboom;
+    src: url(/dist/fonts/badaboom.otf);
+}
+@font-face {
+    font-family: comic_book;
+    src: url(/dist/fonts/comic_book.otf);
+}
